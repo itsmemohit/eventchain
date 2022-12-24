@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Image } from '@chakra-ui/react'
 import { Box, Button, chakra, Flex, SimpleGrid } from "@chakra-ui/react";
 const link = "https://www.nftickets.io";
 export default function Feature() {
@@ -12,6 +12,12 @@ export default function Feature() {
                 w="full"
                 justifyContent="center"
                 alignItems="center"
+                style={{
+                    width: "auto",
+                    "@media (max-width: 640px)": {
+                        width: "100%",
+                    },
+                }}
             >
                 <Box
                     shadow="xl"
@@ -22,7 +28,7 @@ export default function Feature() {
                     mx="auto"
                 >
                     <SimpleGrid
-                        alignItems="start"
+                        alignItems="center"
                         columns={{ base: 1, md: 2 }}
                         mb={24}
                         spacingY={{ base: 10, md: 32 }}
@@ -32,7 +38,7 @@ export default function Feature() {
                             <chakra.h2
                                 mb={4}
                                 fontSize={{ base: "2xl", md: "4xl" }}
-                                fontWeight="bold"
+                                fontWeight="extrabold"
                                 letterSpacing="tight"
                                 textAlign={{ base: "center", md: "left" }}
                                 color="gray.900"
@@ -72,11 +78,9 @@ export default function Feature() {
                         <Box
                             w="full"
                             h="full"
-                            py={48}
-                            bg="gray.200"
                             _dark={{ bg: "gray.700" }}
-                        ><img src="/event-tickets.png" width="110"
-                            height="50" alt="Nature" class="responsive" />
+                        >
+                            <Image src="https://i.ibb.co/k9BJsXR/token-gated-events.png" alt="token gate events" size="80%" />
                         </Box>
                     </SimpleGrid>
                     <SimpleGrid
@@ -125,10 +129,12 @@ export default function Feature() {
                         <Box
                             w="full"
                             h="full"
-                            py={48}
-                            bg="gray.200"
+                            py={18}
+
                             _dark={{ bg: "gray.700" }}
-                        ></Box>
+                        >
+                            <Image src="https://i.ibb.co/W0pYgFR/tickets.png" alt="event events" size="90%" />
+                        </Box>
                     </SimpleGrid>
                 </Box>
             </Flex>

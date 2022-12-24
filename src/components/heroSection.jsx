@@ -13,7 +13,7 @@ const HeroSection = () => {
           </Stack>
         </Box> */}
         <chakra.h1
-          fontSize={{ sm: '4xl', md: '6xl' }}
+          fontSize={{ base: "5xl", sm: '4xl', md: '6xl' }}
           fontWeight="bold"
           textAlign="center"
           maxW="600px"
