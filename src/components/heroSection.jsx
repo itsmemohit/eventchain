@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Container, chakra, Stack, Text, Button } from '@chakra-ui/react';
+import { Container, chakra, Stack, Text, Button, Link } from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
-
+const link = "https://eventchain.vercel.app/";
 const HeroSection = () => {
   return (
     <Container p={{ base: 8, sm: 14 }}>
@@ -47,8 +47,12 @@ const HeroSection = () => {
             size="lg"
             height="3.5rem"
             fontSize="1.2rem"
+            href={link}
           >
-            Get Started
+            <Link href={link} isExternal>
+              Get Started
+            </Link>
+
           </Button>
           {/* <Button
             leftIcon={<FaGithub />}

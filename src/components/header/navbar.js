@@ -53,7 +53,7 @@ function NavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">We're Hiring</Nav.Link>
+            <Nav.Link href="">We're Hiring</Nav.Link>
             <Nav.Link href="#features">How it works?</Nav.Link>
             <Nav.Link href="#pricing">Join Community</Nav.Link>
           </Nav>

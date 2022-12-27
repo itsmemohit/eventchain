@@ -1,7 +1,7 @@
 import React from "react";
-import { Image } from '@chakra-ui/react'
+import { Image, Link } from '@chakra-ui/react'
 import { Box, Button, chakra, Flex, SimpleGrid } from "@chakra-ui/react";
-const link = "https://www.nftickets.io";
+const platformLink = "https://eventchain.vercel.app/";
 export default function Feature() {
     return (
         <>
@@ -69,10 +69,12 @@ export default function Feature() {
                                 w={{ base: "full", sm: "auto" }}
                                 size="lg"
                                 colorScheme='linkedin'
-                                href={link}
+                                href={platformLink}
                                 target="_blank"
                             >
-                                Learn More
+                                <Link href={platformLink} isExternal>
+                                    Learn More
+                                </Link>
                             </Button>
                         </Box>
                         <Box
@@ -120,10 +122,12 @@ export default function Feature() {
                                 w={{ base: "full", sm: "auto" }}
                                 size="lg"
                                 colorScheme='linkedin'
-                                href={link}
                                 target="_blank"
                             >
-                                Learn More
+                                <Link href={platformLink} isExternal>
+                                    Learn More
+                                </Link>
+
                             </Button>
                         </Box>
                         <Box
